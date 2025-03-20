@@ -1,0 +1,152 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../Imagenes/musicafondo.png");
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Título con estilo místico */
+  .mystic-title {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    background: linear-gradient(90deg, #ffcc00, #ff66ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  /* Animación de brillo */
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    to {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+  }
+  
+  /* Contenedor de los botones */
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  /* Estilos generales para los botones */
+  .styled-button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Estilo para el botón de añadir música */
+  .styled-button {
+    background: linear-gradient(135deg, #00ff99, #0066ff);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 255, 153, 0.5);
+  }
+  
+  /* Estilo para el botón de borrar música */
+  .styled-button.delete {
+    background: linear-gradient(135deg, #ff4444, #cc0000);
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 68, 68, 0.5);
+  }
+  
+  /* Efecto de hover en los botones */
+  .styled-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.4);
+  }
+  
+/* Importar fuente medieval */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+.navbar {
+    
+    border-bottom: 4px solid #8B4513; /* Borde marrón oscuro */
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidad */
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'MedievalSharp', cursive; /* Fuente medieval */
+}
+
+.navbar-list li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: #d4af37; /* Dorado medieval */
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase; /* Letras mayúsculas */
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Efecto de hover: cambia color y añade borde dorado */
+.navbar-list a:hover {
+    color: #fff7d6; /* Color pergamino claro */
+    border-bottom: 3px solid #d4af37;
+    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.7); /* Brillo dorado */
+}
+
+/* Efecto encantado: Resplandor dorado al pasar el mouse */
+.navbar-list a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: #d4af37;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-list a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+/* Estilo medieval para dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar-list li {
+        display: block;
+        margin: 10px 0;
+    }
+}
